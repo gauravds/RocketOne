@@ -24,4 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (int)sumNumberA:(int)a andB:(int)b {
+    return a+b;
+}
+
 @end

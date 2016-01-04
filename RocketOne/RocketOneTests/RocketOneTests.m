@@ -7,9 +7,10 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface RocketOneTests : XCTestCase
-
+@property (nonatomic) ViewController *vc;
 @end
 
 @implementation RocketOneTests
@@ -17,6 +18,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.vc = [[ViewController alloc] init];
 }
 
 - (void)tearDown {
@@ -24,16 +26,9 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testAdding {
+    XCTAssertEqual(15, [self.vc sumNumberA:5 andB:10]);
+    XCTAssertNotEqual(16, [self.vc sumNumberA:5 andB:10]);
 }
 
 @end

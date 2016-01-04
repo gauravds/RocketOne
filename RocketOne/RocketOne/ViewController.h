@@ -6,4 +6,8 @@
 //  Copyright © 2016 Softex Lab. All rights reserved.
 //
 
-@interface ViewController : BaseViewController @end
+#import "BaseViewController.h"
+
+@interface ViewController : BaseViewController
+- (int)sumNumberA:(int)a andB:(int)b;
+@end

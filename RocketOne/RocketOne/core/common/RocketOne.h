@@ -6,6 +6,10 @@
 //  Copyright © 2016 Softex Lab. All rights reserved.
 //
 
+//-- Apple Imports
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 //-- Third Party Imports
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <AFNetworking/AFNetworking.h>
@@ -18,13 +22,13 @@
 #import <RNCryptor/RNCryptor.h>
 #import <TWMessageBarManager/TWMessageBarManager.h>
 
-//-- Configurations
-#import "ROConfig.h"
-
 //-- Base Files
 #import "BaseDelegate.h"
 #import "BaseError.h"
 #import "BaseViewController.h"
+
+//-- Configurations
+#import "ROConfig.h"
 
 //-- Categories
 
